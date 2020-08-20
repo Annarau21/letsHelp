@@ -1,3 +1,29 @@
-* {
-  background-color: #f5edd880;
+
+h1 {
+  text-shadow:
+  -1px -1px 0 #ff8c00,
+  1.5px -1px 0 #ff8c00,
+  -1px 1.5px 0 #ff8c00,
+  1.5px 1.5px 0 #ff8c00;
+}
+
+h3, h1, h5, h2 {
+  font-weight : bold;
+  
+}
+
+/* Jumbrotron */
+
+.jumbotron {
+  background-image: url(/assets/images/Header_Background.jpg);
+
+}
+
+.jumbotron h1 {
+  color:gray; 
+  font-size: 100px;
+}
+
+.jumbotron h3 {
+  color: rgb(207, 55, 55);
 }
