@@ -1,4 +1,10 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1 {
   text-shadow:
   -1px -1px 0 #ff8c00,
@@ -10,6 +16,11 @@ h1 {
 h3, h1, h5, h2 {
   font-weight : bold;
   
+}
+
+.nav-link {
+  color: gray;
+  font-weight: bold;
 }
 
 /* Jumbrotron */
@@ -26,4 +37,14 @@ h3, h1, h5, h2 {
 
 .jumbotron h3 {
   color: rgb(207, 55, 55);
+}
+
+/* Home */
+
+.personalStories .card {
+  color: pink;
+}
+
+.accordion{
+  border: black solid 2px;
 }

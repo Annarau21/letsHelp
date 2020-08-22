@@ -26,7 +26,7 @@ class Header extends Component {
 
         return (
             <React.Fragment>
-                <Navbar sticky="top" expand="md">
+                <Navbar expand="md">
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/">
                             <img src={logo} height={30} width={30} alt="logo" />
