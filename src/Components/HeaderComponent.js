@@ -12,6 +12,8 @@ class Header extends Component {
         this.state = {
           isNavOpen: false
         };
+        this.toggleNav = this.toggleNav.bind(this);
+
     }
 
     toggleNav() {
@@ -23,7 +25,50 @@ class Header extends Component {
     render() {
 
         return (
-            <div>
+            <React.Fragment>
+                <Navbar sticky="top" expand="md">
+                    <div className="container">
+                        <NavbarBrand className="mr-auto" href="/">
+                            <img src={logo} height={30} width={30} alt="logo" />
+                        </NavbarBrand>
+                        <NavbarToggler onClick={this.toggleNav} />
+                        <Collapse isOpen={this.state.isNavOpen} navbar>
+                            <Nav navbar>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/home">
+                                        <i className="fa fa-home fa-lg" /> Home
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/currentClasses">
+                                        <i className="" /> Current Classes
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/volunteer">
+                                        <i className="" /> Volunteer
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/requestAClass">
+                                        <i className="fa fa-home fa-lg" /> Request A Class
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/about">
+                                        <i className="fa fa-info fa-lg" /> About
+                                    </NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink className="nav-link" to="/cafe">
+                                        <i className="fa fa-coffee fa-lg" /> Cafe
+                                    </NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
+                    </div>
+                </Navbar>
+
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row row-content align-items-left">
@@ -37,7 +82,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </Jumbotron>
-            </div>
+            </React.Fragment>
         );
     }
 }

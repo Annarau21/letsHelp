@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
-class RequestAClass extends Component {
+//make a function class to display the data
+
+class CurrentClasses extends Component {
     render() {
         return(
             <div></div>
@@ -8,4 +10,4 @@ class RequestAClass extends Component {
     }
 }
 
-export default RequestAClass;
+export default CurrentClasses;

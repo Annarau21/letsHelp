@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class RequestAClass extends Component {
+class Volunteer extends Component {
     render() {
         return(
             <div></div>
@@ -8,4 +8,4 @@ class RequestAClass extends Component {
     }
 }
 
-export default RequestAClass;
+export default Volunteer;
