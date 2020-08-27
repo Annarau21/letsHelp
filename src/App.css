@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #f5edd880;
+}
+
 h1 {
   text-shadow:
   -1px -1px 0 #ff8c00,
@@ -18,9 +23,93 @@ h3, h1, h5, h2 {
   
 }
 
+h3, .footer h5{
+  padding: 10px;
+}
+
 .nav-link {
   color: gray;
   font-weight: bold;
+}
+
+a {
+  font-weight: bold;
+  color: black;
+}
+
+/* Home */
+
+.intro .btn, p{
+  margin-bottom: 20px;
+}
+
+.intro h3 {
+  border: solid peachpuff 2px;
+  background-color: rgb(255, 255, 255, 0.7);
+  align-self: center;
+  padding: 15px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.intro{
+  margin: 30px;
+}
+
+.personalStories {
+  padding-top: 100px;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.card {
+  border: solid white 6px;
+  border-radius: 10px;
+  min-height: 750px;
+  margin: 40px 10px;
+}
+
+.card:hover {
+  background-color: peachpuff;
+  display: block;
+  transition: ease-in-out;
+  transition-duration: .15s;
+  box-shadow: 0 0 5px 1.5px peachpuff;
+}
+
+.whatAbout {
+  border: solid #ff8c00 2px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.whatAbout h2 {
+  margin: 20px;
+  padding: 10px;
+}
+
+.accordion {
+  background-color: rgb(255, 255, 255);
+}
+
+.ending {
+  background-color: rgb(255, 255, 255);
+  padding-top: 50px;
+  padding-bottom: 25px;
+  margin-bottom: 70px;
+}
+
+.ending h3 {
+  margin-left: 40%;
+  padding-bottom: 25px;
+}
+
+.ending .btn{
+  border: rgb(255, 255, 255, 0.7) solid 3px;
+  border-radius: 20px;
+  margin: 15px;
+}
+.ending .content {
+  margin-left: 50px;
 }
 
 /* Jumbrotron */
@@ -39,12 +128,25 @@ h3, h1, h5, h2 {
   color: rgb(207, 55, 55);
 }
 
-/* Home */
+/* Footer */
 
-.personalStories .card {
-  color: pink;
+footer a {
+  color: black;
 }
 
-.accordion{
-  border: black solid 2px;
+footer .btn {
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: white solid 3px;
+  background-color: rgb(255, 255, 255, 0.7);
+  width: 5px;
 }
+
+footer {
+  background-image: linear-gradient(#f5edd880, #f5edd880,#ff8c00);
+  padding: 50px 0;
+}
+
+
+
