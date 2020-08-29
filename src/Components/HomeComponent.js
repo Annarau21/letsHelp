@@ -57,7 +57,7 @@ class Home extends Component {
                     <div className="container">
                         <div className="row row-content align-items-center">
                             <div className="col-12">
-                                <h2>Personal Stories</h2>
+                                <h2 style={{textAlign: 'center'}} >Personal Stories</h2>
                             </div>
                             <div className="col-12 col-md-6">
                                 <RenderCard item={REVIEWS[0]} />
@@ -75,12 +75,12 @@ class Home extends Component {
                     </div>   
                 </div>
                 <div className="ending">
-                    <div className="container">
-                        <div className="row row-content">
+                    <div className="container fluid">
+                        <div className="row">
                             <div className="col-12">
-                                <h3>Class Categories</h3>
+                                <h3 style={{textAlign: 'center'}}>Class Categories</h3>
                             </div>
-                            <div className="col col-12 col-sm-6">
+                            <div className="col col-12 col-lg-5">
                                 <Accordion title="HouseHold" element1="Cleaning" element2="Cooking" />
                                 <Accordion title="Financial" element1="Taxes" element2="Budgeting" />
                                 <Accordion title="Education" element1="Mathematics" element2="Mathematics" />
@@ -89,7 +89,8 @@ class Home extends Component {
                                 <Accordion title="Social" element1="Experience Other Cultures" element2="Meeting New People" />
                                 <Accordion title="Misc." element1="This" element2="and That" />
                             </div>
-                            <div className="col col-12 col-sm-6">
+                            <div className="col col-lg-1 col-12"></div>
+                            <div className="col col-lg-5 col-12">
                                <img src="assets/images/workTable.gif" />
                             </div>
                         </div>

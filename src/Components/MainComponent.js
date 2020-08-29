@@ -9,8 +9,17 @@ import Cafe from './CafeComponent';
 import CurrentClasses from './CurrentClassesComponent';
 import RequestAClass from './RequestAClassComponent';
 import Volunteer from './VolunteerComponent';
+import {Classes} from '../shared/classes';
 
 class Main extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            classes: Classes
+        }
+    }
+
 
     render() {
 

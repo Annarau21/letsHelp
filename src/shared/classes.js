@@ -3,7 +3,6 @@ export const Classes = [
         id: 0,
         title: '',
         classType: '',
-        zipcode: '',
         teacher: '',
         contactPhone: '',
         email: '',
@@ -14,7 +13,7 @@ export const Classes = [
         numOfStudents: '',
         fee: 0,
         comments: '',
-        approved: false,
+        approved: false
 
     },
 
